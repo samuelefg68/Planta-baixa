@@ -1,0 +1,60 @@
+/* a caixa é a referência para posicionar os links */
+.planta {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+/* aparência dos botões: transparentes, só com borda */
+.comodo {
+  position: absolute;
+  border: 2px solid blue;
+  color: black;
+}
+
+/* posição de cada cômodo: valores do Figma (PLANTA zezin mamãe) */
+.recepcao {
+  left: 0px;     /* X */
+  top: 0px;      /* Y */
+  width: 263px;  /* W */
+  height: 165px; /* H */
+}
+.copa {
+  left: 263px;
+  top: 0px;
+  width: 261px;
+  height: 165px;
+}
+.banheiro {
+  left: 524px;
+  top: 0px;
+  width: 76px;
+  height: 165px;
+}
+.reunioes {
+  left: 0px;
+  top: 165px;
+  width: 352px;
+  height: 235px;
+}
+.escritorio {
+  left: 351px;
+  top: 165px;
+  width: 249px;
+  height: 235px;
+}
+
+/* começa escondido */
+.info {
+  display: none;
+}
+
+/* aparece quando o link do mesmo id é clicado */
+.info:target {
+  display: block;
+}
+
+/* ao passar o mouse, o cômodo ganha cor */
+.comodo:hover {
+  background-color: rgba(255, 255, 0, 0.205);
+}
